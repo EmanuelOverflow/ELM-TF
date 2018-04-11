@@ -86,8 +86,8 @@ def elm_mnist_example():
         })
 
         beta_out = np.array(beta_out)
-
         total_time = time.time() - start
+
         out_loss, out_acc = sess.run([loss, acc], feed_dict={
             x: train_samples,
             y: train_labels,

@@ -5,8 +5,8 @@ def pinv(A):
     # Moore-Penrose pseudo-inverse
     with tf.name_scope("pinv"):
         s, u, v = tf.svd(A, compute_uv=True)
-        s_diag = tf.diag(s)
-        s_inv = tf.matrix_inverse(s_diag)
+        s_inv = tf.reciprocal(s)
+        s_inv = tf.diag(s_inv)
         left_mul = tf.matmul(v, s_inv)
         u_t = tf.transpose(u)
         return tf.matmul(left_mul, u_t)
