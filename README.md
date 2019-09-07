@@ -1,4 +1,7 @@
-# Extreme Learning Machine
+[![Build Status](https://travis-ci.com/EmanuelOverflow/ELM-TF.svg?branch=master)](https://travis-ci.com/EmanuelOverflow/ELM-TF)
+---
+
+# Extreme Learning Machine 
 
 A simple implementation of **ELM** written in **Tensorflow**.
 
